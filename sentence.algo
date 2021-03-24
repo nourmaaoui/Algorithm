@@ -1,0 +1,23 @@
+ALGORITHM algorithm_name
+VAR 
+ch:CHAR;
+counter1,counter2,vowelsnbr : INTEGER;
+BEGIN
+writeln ("write a character")
+readln ("ch")
+counter1:=1;
+counter2:=1;
+vowelsnbr:=0;
+WHILE (ch <> ".") DO
+counter1:=counter1+1;
+IF (ch= " ") THEN
+counter2:= counter2+1;
+END_IF 
+IF (ch="a"or ch="A" or ch="e" or ch="E" or ch="o" or ch="O" or ch="i" or ch="I" or ch="u" or ch="U" or ch="y" or ch="Y") THEN
+vowelsnbr:= vowelsnbr+1;
+END_IF
+END_WHILE
+writeln("the length of the sentence :",counter1) ;
+writeln("the number of the sentence :",counter2) ;
+writeln("the number of vowels :", vowelsnbr) ;
+END
